@@ -1,0 +1,16 @@
+
+.footer__container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    background-color: #262329;
+    color: #ffffff;
+}
+
+
+.footer__container h1 {
+    font-size: 1rem;
+    text-align: center;
+}
