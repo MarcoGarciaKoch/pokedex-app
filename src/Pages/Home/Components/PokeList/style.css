@@ -1,0 +1,134 @@
+
+main {
+    position: relative;
+    min-height: 100vh;
+}
+
+.infinite-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.order-select__container {
+  position: absolute;
+  right: 0;
+}
+
+.order-select {
+    height: 40px;
+    width: 220px;
+    margin-right: 50px;
+    border: 3px solid #2e063b;
+    border-radius: 10px;
+    background-color: #c8c7c7;
+    font-size: 1.2rem;
+}
+  
+
+.main-logo__container {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100vw;
+}
+
+.main-logo {
+    width: 200px;
+}
+
+.filter__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.filter__container div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #C748D8;
+    background: -moz-linear-gradient(-45deg, #C748D8 0%, #771FA0 38%, #190537 100%);
+    background: -webkit-linear-gradient(-45deg, #C748D8 0%, #771FA0 38%, #190537 100%);
+    background: linear-gradient(135deg, #C748D8 0%, #771FA0 38%, #190537 100%);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 2px 2px 5px #333333;
+}
+
+.filter__container div input {
+    width: 20px;
+    height: 20px;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 480px) {
+
+.order-select {
+    height: 35px;
+    width: 120px;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+  
+
+.main-logo__container {
+    margin-top: 40px;
+}
+
+.main-logo {
+    width: 250px;
+}
+
+.filter__container {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter__container div {
+    width: 35%;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.filter__container div input {
+    width: 10px;
+    height: 10px;
+}
+}
+
+
+@media screen and (max-width: 850px) and (min-width: 481px) {
+    
+    .filter__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .filter__container div {
+        width: 130px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .filter__container div input {
+        width: 15px;
+        height: 15px;
+    }
+}

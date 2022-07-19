@@ -1,0 +1,111 @@
+
+.contact-page__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-form__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.logo-form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.pokeball-image {
+    width: 100px;
+    align-self: start;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.input__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+input {
+    width: 400px;
+    height: 35px;
+    font-size: 0.9rem;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 200px;
+    height: 30px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.submit-button:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 2px #ffffff;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 480px) {
+    
+    .contact-page__container {
+        gap: 20px;
+    }
+
+    .contact-form__title {
+        font-size: 0.9rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .logo-form__container {
+        gap: 30px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .pokeball-image {
+        width: 70px;
+        align-self: center;
+    }
+
+    .input__container {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 200px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .submit-button {
+        width: 150px;
+        height: 30px;
+        align-self: flex-start;
+        font-size: 0.8rem;
+    }
+}

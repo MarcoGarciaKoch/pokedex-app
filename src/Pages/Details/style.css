@@ -1,0 +1,164 @@
+
+.pokemon-detailPage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.insignia__logo {
+    width: 50px;
+}
+
+.pokemon-name {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.main-info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+}
+
+.pokemon-image img {
+    width: 350px;
+}
+
+.data__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.pokemon-details, .pokemon-powers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pokemon-details {
+    gap: 24px;
+}
+
+.pokemon-details div, .pokemon-powers div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ability-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 30px;
+    width: 150px;
+    background-color: #b68d44;
+    border-radius: 10px;
+}
+
+.power-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background-color: #b2b1b1;
+    border-radius: 10px;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 480px) {
+    .pokemon-detailPage__container {
+        gap: 40px;
+    }
+    
+    .insignia__logo {
+        width: 40px;
+    }
+
+    .pokemon-name {
+        font-size: 1.5rem;
+    }
+
+    .pokemon-image img {
+        width: 250px;
+    }
+    
+    .data__container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+        gap: 70px;
+    }
+    
+    .pokemon-details, .pokemon-powers {
+        width: 70%;
+        gap: 15px;
+    }
+    
+    .pokemon-details div, .pokemon-powers div {
+        font-size: 0.8rem;
+    }
+    
+    .ability-type {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) and (min-width: 481px) {
+    
+    .pokemon-detailPage__container {
+        gap: 40px;
+    }
+    
+    .insignia__logo {
+        width: 50px;
+    }
+    
+    .main-info__container {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    
+    .data__container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        gap: 90px;
+    }
+    
+    .pokemon-details, .pokemon-powers {
+        width: 55%;
+        gap: 15px;
+    }
+    
+    .pokemon-details div, .pokemon-powers div {
+        font-size: 1rem;
+    }
+    
+    .ability-type {
+        font-size: 0.9rem;
+    }
+}
