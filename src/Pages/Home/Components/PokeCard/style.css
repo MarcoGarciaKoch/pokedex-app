@@ -106,10 +106,7 @@
 }
 
 .navigate-to-details__text {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-  text-align: center;
+  align-self: center;
   opacity: 0;
   color: #c9af53;
   font-size: 1.2rem;
