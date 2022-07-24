@@ -1,5 +1,9 @@
 
 .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -12,5 +16,23 @@
 
 .footer__container h1 {
     font-size: 1rem;
-    text-align: center;
+}
+
+.github-info__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.github-logo {
+    background-image: url('../../assets/github.png');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.github-link {
+    color: #ffffff;
 }
